@@ -26,7 +26,7 @@
         } else if( $earn > 750000 && $earn <= 1000000) {
             echo "ภาษี: " . $earn * 20/100;
         } else if( $earn > 1000000 && $earn <= 2000000) {
-            echo "ภาษี: " . $earn * 15/100;
+            echo "ภาษี: " . $earn * 25/100;
         } else if( $earn > 2000000 && $earn <= 5000000) {
             echo "ภาษี: " . $earn * 30/100;
         } else if( $earn > 5000000) {

@@ -17,6 +17,11 @@
             $eduqualify = $_GET['edu-qualify'];
             $gender = $_GET['gender'];
 
+            $date = new DateTime($birthday);
+            $now = new DateTime();
+            $interval = $now->diff($date);
+            $age = $interval->y;
+            
             echo "<div class='container'>";
             echo "<div class='header'>";
             echo "<p>แสดงผลข้อมูลนักศึกษา</p>";
@@ -27,6 +32,7 @@
             echo "<p>อีเมล: <span>$email</span></p>";
             echo "<p>เบอร์โทรศัพท์: <span>$telnumber</span></p>";
             echo "<p>วัน-เดือน-ปี เกิด: <span>" . date_format(date_create($birthday), "d-m-Y") . "</span></p>";
+            echo "<p>อายุ: <span>$age ปี</span></p>";
             echo "<p>วุฒิการศึกษา: <span>$eduqualify</span></p>";
             echo "<p>เพศ: <span>$gender</span></p>";
             echo "<form action='" . htmlentities($_SERVER['PHP_SELF']) . "'>";

@@ -13,16 +13,16 @@
         </div>
         <form action="display.php" method='get'>
             <label for="full-name">ชื่อ-นามสกุล <span>*</span></label>
-            <input type="text" name="full-name" required>
+            <input type="text" name="full-name">
 
             <label for="std-id">รหัสนักศึกษา <span>*</span></label>
-            <input type="number" name="std-id" required>
+            <input type="number" name="std-id" maxlength="5">
 
             <label for="email">อีเมล <span>*</span></label>
-            <input type="email" name="email" required>
+            <input type="email" name="email">
 
             <label for="telnumber">เบอร์โทรศัพท์ <span>*</span></label>
-            <input type="tel" name="telnumber" required>
+            <input type="tel" name="telnumber">
 
             <label for="birthday">วัน-เดือน-ปี เกิด <span>*</span></label>
             <input type="date" name="birthday" required>
